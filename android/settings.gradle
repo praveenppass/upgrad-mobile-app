@@ -1,0 +1,33 @@
+
+pluginManagement { 
+    includeBuild("../node_modules/@react-native/gradle-plugin")
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+
+plugins { id("com.facebook.react.settings") }
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://repo.brightcove.com/releases'
+        }
+        maven { url 'https://www.jitpack.io' }
+    }
+}
+
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+rootProject.name = 'lexMobileApp'
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')
+include ':app', ':react-native-code-push'
+project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
+// include ':react-native-video'
+// project(':react-native-video').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-video/android')

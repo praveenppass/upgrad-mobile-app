@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp" 
+    android:id="@+id/root_layout">
+
+    <ProgressBar
+        android:id="@+id/video_loader"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="#E8EAED" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn_retry"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/restart_icon"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Rewind" />
+
+        <TextView
+            android:id="@+id/txt_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Poor Internet. Video couldn't load"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="16dp" />   
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/controls_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/txt_cannot_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center"
+            android:text="You cannot skip / forward the video"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="6dp"
+            android:layout_marginTop="6dp"
+            android:drawableStart="@drawable/alert_circle" 
+            android:drawablePadding="6dp"
+            android:background="@drawable/rounded_dialog_background"/>
+        
+
+        <ImageButton
+            android:id="@+id/btn_settings"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/setting_icon"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            android:padding="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="setting" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_rewind"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/rewind"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Rewind" />
+
+            <ImageButton
+                android:id="@+id/btn_play_pause"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginHorizontal="18dp"
+                android:src="@android:drawable/ic_media_play"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Play/Pause" />
+
+            <ImageButton
+                android:id="@+id/btn_fast_forward"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/forward_icon"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Fast Forward" />
+        </LinearLayout>
+
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="8dp"
+                android:paddingBottom="5dp"
+                android:background="@android:color/transparent">
+
+                <!-- Time Display -->
+                <TextView
+                    android:id="@+id/tv_current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:paddingHorizontal="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textColor="#FFFFFF"/>
+
+                <!-- Unmute Button -->
+                <ImageButton
+                    android:id="@+id/btn_unmute"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Audio Mute"
+                    android:padding="6dp"
+                    android:src="@drawable/un_mute_icon"
+                    android:scaleType="fitXY"/>
+
+                <!-- Spacer -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <!-- Navigation & Control Icons (All Same Size) -->
+                <ImageButton
+                    android:id="@+id/btn_previous"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="btn_previous"
+                    android:src="@drawable/gray_previous_icon"
+                    android:scaleType="fitXY"
+                    android:padding="6dp"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_next"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="btn_next"
+                    android:src="@drawable/white_next_icon"
+                    android:scaleType="fitXY"
+                    android:padding="6dp"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_multi_video"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="btn_multi_video"
+                    android:src="@drawable/video_list_icon"
+                    android:scaleType="fitXY"
+                    android:padding="6dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_cc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Closed Captions"
+                    android:src="@drawable/cc_icon"
+                    android:scaleType="fitXY"
+                    android:padding="6dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginEnd="15dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_fullscreen"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Fullscreen"
+                    android:src="@drawable/full_screen_icon"
+                    android:scaleType="fitXY"
+                    android:padding="6dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- <FrameLayout
+        android:id="@+id/error_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="This video file not be played \n (Error Code: 224003)"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_dialog_background" />    
+    </FrameLayout> -->
+
+</FrameLayout>

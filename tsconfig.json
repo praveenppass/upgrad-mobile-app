@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"baseUrl": "src",
+		"jsx": "react",
+		"lib": ["es2021"],
+		"paths": {
+			"@actions/*": ["actions/*"],
+			"@app/*": ["app/*"],
+			"@assets/*": ["assets/*"],
+			"@components/*": ["components/*"],
+			"@config/*": ["config/*"],
+			"@constants/*": ["constants/*"],
+			"@contexts/*": ["contexts/*"],
+			"@data/*": ["data/*"],
+			"@graphql/*": ["graphql/*"],
+			"@hoc/*": ["hoc/*"],
+			"@hooks/*": ["hooks/*"],
+			"@icons/*": ["icons/*"],
+			"@interface/*": ["interface/*"],
+			"@interfaces/*": ["interfaces/*"],
+			"@navigation/*": ["navigation/*"],
+			"@reducers/*": ["reducers/*"],
+			"@redux/*": ["redux/*"],
+			"@routes/*": ["routes/*"],
+			"@sagas/*": ["sagas/*"],
+			"@screens/*": ["screens/*"],
+			"@services/*": ["services/*"],
+			"@strings/*": ["strings/*"],
+			"@utils/*": ["utils/*"]
+		},
+		"skipLibCheck": true
+	},
+	"exclude": ["__tests__/**/*-test.ts"],
+	"extends": "@react-native/typescript-config/tsconfig.json"
+}

@@ -1,0 +1,849 @@
+{
+  "project_info": {
+    "project_number": "636022351605",
+    "firebase_url": "https://upgrad-app.firebaseio.com",
+    "project_id": "upgrad-app",
+    "storage_bucket": "upgrad-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:f08a9ea6c2e138b2c787bc",
+        "android_client_info": {
+          "package_name": "com.knowledgehut.onlinecourses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:ae0b9b56307a1cb6c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:27d215c2e057d855c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.learning.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:e8ed8f32becbe172c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.learning.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:8619d07646b42bcac787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.learning.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:fe967ba38bcccb0e",
+        "android_client_info": {
+          "package_name": "com.upgrad.student"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-1v7h3f2io02e59sn7f3jf0hscn42e813.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upgrad.student",
+            "certificate_hash": "505896f32bf32226ccf70f556460159f40d249b8"
+          }
+        },
+        {
+          "client_id": "636022351605-2eknvjptgqb7o6nhasm1v2vvkgfhol8h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upgrad.student",
+            "certificate_hash": "1964d13bc11fd73bc256070abd877ca9192a28d2"
+          }
+        },
+        {
+          "client_id": "636022351605-rbcigrolt4bkc29idivtpcm6uvl5jje7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upgrad.student",
+            "certificate_hash": "c25977ef14edad7007c39b08a6713e1d8328d595"
+          }
+        },
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:2b8d6a760701dd77c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.editor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:fec2740575e0a9aac787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.himalia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:86fced0021aa503cc787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.lo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:849707ed69a567eec787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.loadtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:28e0290e90fd51f2c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.mercury"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:7b0374502c349e97c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.neptune"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:305d18fa135e54b7c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.pandora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:7171888f72d86f6ac787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.pluto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:eb188a5e0b3e8011c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.saturn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:750aa6bb2eff0fecc787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:af73d458adbb108dc787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.stagingmarketing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:a2b99f8ed40b2509",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-hielvr629m1qlposim92k9rl3p0jqqcd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upgrad.student.test",
+            "certificate_hash": "505896f32bf32226ccf70f556460159f40d249b8"
+          }
+        },
+        {
+          "client_id": "636022351605-lh8osf140tq8pksifos4cupukvnitdv7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upgrad.student.test",
+            "certificate_hash": "c25977ef14edad7007c39b08a6713e1d8328d595"
+          }
+        },
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636022351605:android:db6f33f95e831ad4c787bc",
+        "android_client_info": {
+          "package_name": "com.upgrad.student.uranus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636022351605-njvufdikk7gj5dbvrh1eees8jj3vokh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEWNBqydO3JNQ6JOoHSGj018jt3eDEcXQ"
+        },
+        {
+          "current_key": "AIzaSyAmhUJ_vfoUWfq2Ux7yyVgcdipiw7PQXNg"
+        },
+        {
+          "current_key": "AIzaSyCoMdfJAJN3fFx8tbB_9HJ1-pDYcmZbJL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100231938500340209740",
+              "client_type": 3
+            },
+            {
+              "client_id": "636022351605-9540fv6rbhls0s0gmknveg34pj8ipcug.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.knowledgehut.onlinecourses"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

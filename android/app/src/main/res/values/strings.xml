@@ -1,0 +1,5 @@
+<resources>
+    <!-- <string name="app_name">upGrad</string> -->
+    <string name="CodePushServerUrl">https://codepush-mobileapp.azurewebsites.net/</string>
+
+</resources>

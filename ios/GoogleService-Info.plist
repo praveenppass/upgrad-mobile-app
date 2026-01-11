@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>636022351605-1bc7jr8fnfg09vecf5sed22odkttbbmd.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA1K4eDzkU4ri9XaKaWswZYOz2ZvMNS4W0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>636022351605</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.upgrad.student</string>
+	<key>PROJECT_ID</key>
+	<string>upgrad-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>upgrad-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:636022351605:ios:cd32bfebb00a9cf2c787bc</string>
+	<key>DATABASE_URL</key>
+	<string>https://upgrad-app.firebaseio.com</string>
+</dict>
+</plist>

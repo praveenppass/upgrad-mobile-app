@@ -1,0 +1,667 @@
+import { gql } from "@apollo/client";
+
+const getAssetUserProgram = gql`
+	query getAssetFromUserProgram($where: UserProgramAssetWhereInput!) {
+		getAssetFromUserProgram(where: $where) {
+			timeSpent
+			userLabAsset
+			userCloudProgrammingLabAsset
+			userCloudProgrammingLabAssetUrl
+			startsAt
+			endsAt
+			enableLock
+			status
+			isBookMarked
+			timeSpent
+			isUpgraded
+			seekTime
+			extensionRequests {
+				requestedAt
+			}
+			isOptional
+			children {
+				status
+				userLabAsset
+				userCloudProgrammingLabAsset
+				userCloudProgrammingLabAssetUrl
+				asset {
+					id
+					code
+				}
+			}
+			userProgram {
+				id
+				totalCourses
+				totalProjects
+				totalAssessments
+				totalAssignments
+				totalHandsOns
+				remainingUnlockRequests
+				totalLevel1Containers
+				totalWorkshopSessions
+				totalExtensionsTaken
+				user {
+					id
+				}
+				enterprise {
+					id
+				}
+				workshop {
+					id
+				}
+				labType
+				lab {
+					id
+					slug
+					status
+					meta
+				}
+				deliveryType {
+					id
+					name
+					type
+				}
+				program {
+					variant
+					enableLockGradableAssets
+					totalExtensionsAllowed
+					hardDeadlineDays
+					level {
+						id
+						name
+					}
+					code
+					name
+					totalLearningDuration
+					noOfDaysFromAssetPostDueDate
+					playgroundSettings {
+						preFix
+						port
+						path
+						postFix
+					}
+					labSettings {
+						relatedImages
+					}
+					playgroundTemplates {
+						dockerImage
+						name
+						imageUrl
+						dockerLabAsset
+					}
+					enablePracticeLab
+				}
+			}
+			asset {
+				sourceCodeFilePath
+				idleDuration
+				id
+				code
+				labPath
+				labType
+				children {
+					type
+					description
+					asset {
+						sourceCodeFilePath
+						idleDuration
+						id
+						code
+						labPath
+						labType
+						assetType {
+							name
+							type
+						}
+						name
+						duration
+						skills {
+							id
+							name
+						}
+						subSkills {
+							id
+							name
+							skill {
+								id
+								name
+							}
+						}
+						video {
+							transcriptFile
+							transcript
+							type
+							vimeo
+							brightcoveId
+							isBrightcoveIdVerified
+						}
+						audio {
+							filePath
+							transcript
+						}
+						ppt {
+							filePath
+						}
+						pdf {
+							filePath
+						}
+						scorm {
+							type
+							filePath
+						}
+						htmlZip {
+							filePath
+						}
+						codeZip {
+							filePath
+						}
+						onlineEditor {
+							description
+							solutionFilePath
+						}
+						handsOn {
+							id
+							name
+							instructions
+							preset
+							presetConfiguration {
+								enableEditor
+								enableBrowser
+								enableDatabase
+								enableTerminal
+								enableMultipleTerminals
+							}
+							enableHint
+							hint
+							enableShowAnswer
+							enableReset
+							labType
+							lab {
+								path
+								meta
+							}
+							question
+							template {
+								type
+								name
+								presetConfiguration {
+									enableEditor
+									enableBrowser
+									enableDatabase
+									enableTerminal
+									enableMultipleTerminals
+								}
+							}
+							question
+							questionUrl
+							answerUrl
+							testCases {
+								suiteName
+								name
+								subSkills {
+									id
+									name
+								}
+							}
+							questions {
+								questionNo
+								questionType
+								type
+								title
+								enum
+								uniqueItems
+								items {
+									type
+									enum
+								}
+							}
+							labAnswerType
+							duration
+						}
+						assignment {
+							id
+							name
+							duration
+							marks
+							passPercentage
+							uploadFileTypes
+							instructions
+							submitByDays
+							subSkills {
+								id
+								name
+							}
+							preset
+							presetConfiguration {
+								enableEditor
+								enableBrowser
+								enableDatabase
+								enableTerminal
+								enableMultipleTerminals
+							}
+							enableHint
+							hint
+							enableShowAnswer
+							enableReset
+							labType
+							lab {
+								path
+								meta
+							}
+							problemStatement
+							enableSpecifications
+							specifications
+							question
+							template {
+								type
+								name
+								presetConfiguration {
+									enableEditor
+									enableBrowser
+									enableDatabase
+									enableTerminal
+									enableMultipleTerminals
+								}
+							}
+							summary {
+								attempt {
+									id
+									answerUrl
+									status
+									createdAt
+									report {
+										score
+										percentage
+										attemptScore
+										proficiencyPercentage
+										classAvgProficiencyPercentage
+									}
+									testCases {
+										suiteName
+										name
+										marks
+										failureMessages
+										attemptScore
+										status
+										specifications
+									}
+								}
+							}
+							questionUrl
+							answerUrl
+							testCases {
+								suiteName
+								name
+								marks
+								subSkills {
+									id
+									name
+								}
+							}
+						}
+						project {
+							id
+							name
+							duration
+							uploadFileTypes
+							marks
+							passPercentage
+							instructions
+							subSkills {
+								id
+								name
+							}
+							preset
+							presetConfiguration {
+								enableEditor
+								enableBrowser
+								enableDatabase
+								enableTerminal
+								enableMultipleTerminals
+							}
+							enableHint
+							hint
+							enableShowAnswer
+							enableReset
+							labType
+							lab {
+								path
+								meta
+							}
+							problemStatement
+							enableSpecifications
+							specifications
+							question
+							template {
+								type
+								name
+								presetConfiguration {
+									enableEditor
+									enableBrowser
+									enableDatabase
+									enableTerminal
+									enableMultipleTerminals
+								}
+							}
+							questionUrl
+							answerUrl
+							summary {
+								attempt {
+									id
+									answerUrl
+									status
+									createdAt
+									report {
+										score
+										percentage
+										attemptScore
+										proficiencyPercentage
+										classAvgProficiencyPercentage
+									}
+									testCases {
+										suiteName
+										name
+										marks
+										failureMessages
+										attemptScore
+										status
+										specifications
+									}
+								}
+							}
+							testCases {
+								suiteName
+								name
+								marks
+								subSkills {
+									id
+									name
+								}
+							}
+						}
+						assessment
+						recallQuiz
+					}
+					order
+				}
+				assetType {
+					name
+					type
+				}
+				name
+				duration
+				skills {
+					id
+					name
+				}
+				subSkills {
+					id
+					name
+					skill {
+						id
+						name
+					}
+				}
+				video {
+					transcriptFile
+					transcript
+					type
+					vimeo
+					brightcoveId
+					isBrightcoveIdVerified
+				}
+				audio {
+					filePath
+					transcript
+				}
+				ppt {
+					filePath
+				}
+				pdf {
+					filePath
+				}
+				scorm {
+					type
+					filePath
+				}
+				htmlZip {
+					filePath
+				}
+				codeZip {
+					filePath
+				}
+				onlineEditor {
+					description
+					solutionFilePath
+				}
+				handsOn {
+					id
+					name
+					instructions
+					preset
+					presetConfiguration {
+						enableEditor
+						enableBrowser
+						enableDatabase
+						enableTerminal
+						enableMultipleTerminals
+					}
+					enableHint
+					hint
+					enableShowAnswer
+					enableReset
+					labType
+					lab {
+						path
+						meta
+					}
+					question
+					template {
+						type
+						name
+						presetConfiguration {
+							enableEditor
+							enableBrowser
+							enableDatabase
+							enableTerminal
+							enableMultipleTerminals
+						}
+					}
+					question
+					questionUrl
+					answerUrl
+					testCases {
+						suiteName
+						name
+						subSkills {
+							id
+							name
+						}
+					}
+					duration
+				}
+				assignment {
+					id
+					name
+					duration
+					marks
+					uploadFileTypes
+					passPercentage
+					instructions
+					subSkills {
+						id
+						name
+					}
+					preset
+					presetConfiguration {
+						enableEditor
+						enableBrowser
+						enableDatabase
+						enableTerminal
+						enableMultipleTerminals
+					}
+					enableHint
+					hint
+					enableShowAnswer
+					enableReset
+					labType
+					lab {
+						path
+						meta
+					}
+					problemStatement
+					enableSpecifications
+					specifications
+					question
+					template {
+						type
+						name
+						presetConfiguration {
+							enableEditor
+							enableBrowser
+							enableDatabase
+							enableTerminal
+							enableMultipleTerminals
+						}
+					}
+					summary {
+						attempt {
+							id
+							answerUrl
+							status
+							createdAt
+							report {
+								score
+								percentage
+								attemptScore
+								proficiencyPercentage
+								classAvgProficiencyPercentage
+							}
+							testCases {
+								suiteName
+								name
+								marks
+								failureMessages
+								attemptScore
+								status
+								specifications
+							}
+						}
+					}
+					questionUrl
+					answerUrl
+					testCases {
+						suiteName
+						name
+						marks
+						subSkills {
+							id
+							name
+						}
+					}
+				}
+				project {
+					id
+					name
+					duration
+					marks
+					uploadFileTypes
+					passPercentage
+					instructions
+					subSkills {
+						id
+						name
+					}
+					preset
+					presetConfiguration {
+						enableEditor
+						enableBrowser
+						enableDatabase
+						enableTerminal
+						enableMultipleTerminals
+					}
+					enableHint
+					hint
+					enableShowAnswer
+					enableReset
+					labType
+					lab {
+						path
+						meta
+					}
+					problemStatement
+					enableSpecifications
+					specifications
+					question
+					template {
+						type
+						name
+						presetConfiguration {
+							enableEditor
+							enableBrowser
+							enableDatabase
+							enableTerminal
+							enableMultipleTerminals
+						}
+					}
+					questionUrl
+					answerUrl
+					summary {
+						attempt {
+							id
+							answerUrl
+							status
+							createdAt
+							report {
+								score
+								percentage
+								attemptScore
+								proficiencyPercentage
+								classAvgProficiencyPercentage
+							}
+							testCases {
+								suiteName
+								name
+								marks
+								failureMessages
+								attemptScore
+								status
+								specifications
+							}
+						}
+					}
+					testCases {
+						suiteName
+						name
+						marks
+						subSkills {
+							id
+							name
+						}
+					}
+				}
+				assessment
+				recallQuiz
+			}
+			nextAsset {
+				asset
+				level1
+				level2
+				level3
+				level4
+			}
+			previousAsset {
+				asset
+				level1
+				level2
+				level3
+				level4
+			}
+			attempt {
+				url
+			}
+		}
+	}
+`;
+
+export { getAssetUserProgram };

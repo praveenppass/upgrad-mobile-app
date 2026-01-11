@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+                <!-- <item name="android:windowFullscreen">true</item> -->
+
+    </style>
+
+    <!-- Style for applying rounded corners -->
+    <style name="RoundedAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="backgroundInsetStart">20dp</item>
+        <item name="backgroundInsetEnd">20dp</item>
+        <item name="backgroundInsetTop">20dp</item>
+        <item name="backgroundInsetBottom">20dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.RoundedDialog</item>
+    </style>
+
+    <!-- Rounded shape definition -->
+    <style name="ShapeAppearanceOverlay.RoundedDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+</resources>

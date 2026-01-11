@@ -1,0 +1,126 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"  package="com.upgrad.student">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.hardware.touchscreen"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="org.telegram.messenger" />
+        <package android:name="com.linkedin.android" />
+        <package android:name="us.zoom.videomeetings" />
+        <intent>
+          <action android:name="android.intent.action.VIEW" />
+          <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:requestLegacyExternalStorage="true" 
+      android:allowBackup="false"
+      android:usesCleartextTraffic="true"
+      android:hardwareAccelerated="true"
+      android:theme="@style/AppTheme"
+      android:supportsRtl="false">
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"
+        android:exported="true">
+        <intent-filter android:autoVerify="true" >
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <!-- Keycloack --> 
+        <intent-filter>
+          <action android:name="android.intent.action.VIEW" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.BROWSABLE" />
+          <data android:scheme="khprismapp" />
+        </intent-filter>
+        <!-- download option -->
+
+        <!--stage deep linking -->
+        <intent-filter android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+            <data android:host="stage-lxp.upgrad.dev" />
+            <data android:pathPrefix="/" />
+        </intent-filter>
+
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="upgrad" />
+        </intent-filter>
+        
+        <!-- production deep linking -->
+        <intent-filter android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+            <data android:host="lxp.upgrad.com" />
+            <data android:pathPrefix="/" />
+        </intent-filter>
+
+        <intent-filter android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+            <data android:host="www.upgrad.com" />
+            <data android:pathPrefix="/lxp" />
+        </intent-filter>
+
+        <!-- end -->
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+          <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>                          
+        </intent-filter>
+      </activity>
+      <meta-data 
+        android:name="com.truecaller.android.sdk.ClientId"
+        android:value="@string/TRUECALLER_CLIENT_ID"
+      />
+
+    <receiver
+        android:name="com.google.android.exoplayer2.ui.PlayerNotificationManager$NotificationReceiver"
+        android:exported="false">
+          <intent-filter>
+              <action android:name="com.google.android.exoplayer.dismiss" />
+              <action android:name="com.google.android.exoplayer.rewind" />
+              <action android:name="com.google.android.exoplayer.pause" />
+              <action android:name="com.google.android.exoplayer.ffwd" />
+              <action android:name="com.google.android.exoplayer.next" />
+              <action android:name="com.google.android.exoplayer.play" />
+              <action android:name="com.google.android.exoplayer.prev" />
+              <action android:name="com.google.android.exoplayer.stop" />
+          </intent-filter>
+    </receiver>
+
+    <service
+      android:name="com.asterinet.react.bgactions.RNBackgroundActionsTask"
+      android:enabled="true"
+      android:exported="false"
+      android:foregroundServiceType="dataSync" />
+
+    </application>
+</manifest>
